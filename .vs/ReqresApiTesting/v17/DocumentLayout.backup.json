@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|c:\\users\\acobradica\\source\\repos\\reqresapitesting\\stepdefinitions\\usersstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|solutionrelative:stepdefinitions\\usersstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|c:\\users\\acobradica\\source\\repos\\reqresapitesting\\stepdefinitions\\generalstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|solutionrelative:stepdefinitions\\generalstepdefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|c:\\users\\acobradica\\source\\repos\\reqresapitesting\\features\\users.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|solutionrelative:features\\users.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|c:\\users\\acobradica\\source\\repos\\reqresapitesting\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78FB5B06-AC3A-45B4-8E90-F835B1DEF770}|ReqresApiTesting.csproj|solutionrelative:services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\Services\\UserServices.cs",
+              "RelativeToolTip": "Services\\UserServices.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:05:11.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GeneralStepDefinitions.cs",
+              "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\StepDefinitions\\GeneralStepDefinitions.cs",
+              "RelativeDocumentMoniker": "StepDefinitions\\GeneralStepDefinitions.cs",
+              "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\StepDefinitions\\GeneralStepDefinitions.cs",
+              "RelativeToolTip": "StepDefinitions\\GeneralStepDefinitions.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:28:56.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersStepDefinitions.cs",
+              "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\StepDefinitions\\UsersStepDefinitions.cs",
+              "RelativeDocumentMoniker": "StepDefinitions\\UsersStepDefinitions.cs",
+              "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\StepDefinitions\\UsersStepDefinitions.cs",
+              "RelativeToolTip": "StepDefinitions\\UsersStepDefinitions.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwDIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T17:28:05.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.feature",
+              "DocumentMoniker": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\Features\\Users.feature",
+              "RelativeDocumentMoniker": "Features\\Users.feature",
+              "ToolTip": "C:\\Users\\AcoBradica\\source\\repos\\ReqresApiTesting\\Features\\Users.feature",
+              "RelativeToolTip": "Features\\Users.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALmSURBVDhPrVPtS1NRGP/du\u002B3uxde5Od\u002B1bL4URmFBhREKqURZH3r9EkSfgj4U\u002BKUPfYhAhMCC6EP1BwTVtxBBgrQQwjJ0URbiSsumzKmsbfdud/d6O\u002BeZS1cQEnvOfnfP\u002BZ3zPOec50UAk\u002B571wzJoXEVS8oCDDY2IwIbLnspVNlM877LvRCu3u02gqYRdO7dTWRpnofvZMI/acdE/CFsjf0WIkEMjk0Q49FaIFy4c9LoaitHo7ueSFVP/Da3mp30r\u002BoRiIIFNosL0cQccWmRTFZ8Dk2R/mwoAJG0LIoYVPzItdqgaDHCqqFDW9XYjeyo9ZwhuHOb4czZgWrXUcZbCQLMtJfbcHsO7kvUDY2eyAPMh0m0o7zwIEwmG0KRCYIoWqCvJrEUfY98\u002BxZCQ9l5FgL3mlUqyrqR5E/ODLjVnI\u002BinJ2oLupAKOojBCPvsCJ/wmJkHDnWSkJEmUFSj2ZWBFP/iqGsBjEdfIxvy4PsSSpB02PshnEWCgWR\u002BAyB63ZL8ZrVumQ/Keu1lhKruRBez2lUOdshCGaCQyoj8DVV\u002B0lw5e6C09HIzDPt6Yac4rHggz9lOTaJ2aUBePKaCTxJNksR6krOsqerhI\u002BBB/i\u002B8pwduCEHTBcLJA8Smpr2SrGaD48wLkyFzJHUZcQSAYb51CZ\u002BNCsZLvyCcWbPUSAVQzjXc8rY2hRC27Z9tMFhdlAhmEQTJMlGnJbUWbco3A1b2Rh2A7ImY8g/SrMvH9zZT4pw/f4N4/XXFyiuTBIhSnHU1jjQUdGOGOsCLqOBcfh/hFmHZJ7PbxxXDATnJJq31B5OVfXLN6\u002BM2cVU0z8Ze4jjrWWwsU4ZnpokLjxXgs6mE/BNT2JxJUQcbzveFPU1XhzYvoe4rtZj6ym62HOJRxtJzyjqKtx462NJUby09vTmo8x2\u002BofQxv7hfqNvoJeIqoYYFvz5aCrZj9tXbm3aUVqynhRyGJVlJOI6we8rwCHvkf\u002B6HQD8AnF2O2/bC\u002BBFAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-10-29T17:25:57.914Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
