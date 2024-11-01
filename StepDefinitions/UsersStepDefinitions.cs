@@ -1,14 +1,19 @@
-﻿using ReqresApiTesting.Services;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using ReqresApiTesting.Models;
+using ReqresApiTesting.Services;
 using RestSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Infrastructure;
+
 
 namespace ReqresApiTesting.StepDefinitions
 {
@@ -27,37 +32,71 @@ namespace ReqresApiTesting.StepDefinitions
 
         public ScenarioContext ScenarioContext { get; }
 
-        [Given(@"I send api call using HTTP client")]
-        public async Task GivenISendApiCallUsingHTTPClient()
+   
+
+        [When(@"I send GET request to the /users endpoint")]
+        public async Task WhenISendGETRequestToTheUsersEndpoint()
         {
-           
             response = await UserServices.GetAllUsers();
             responseBody = await response.Content.ReadAsStringAsync();
             ScenarioContext.Set<HttpResponseMessage>(response, "response");
-
-
-        }
-
-        [When(@"I send GET request to the /users endpoint")]
-        public void WhenISendGETRequestToTheUsersEndpoint()
-        {
-           response.EnsureSuccessStatusCode();
+            response.EnsureSuccessStatusCode();
            
         }
 
-        [Then(@"The response contains ""([^""]*)""")]
-        public void ThenTheResponseContains(string content)
+        [When(@"I send GET request to the /users/\{id} endpoint using ""([^""]*)"" as an id")]
+        public async Task WhenISendGETRequestToTheUsersIdEndpointUsingAsAnId(string id)
         {
-            Assert.Contains(content, responseBody);
+            response = await UserServices.GetSpecificUser(id);
+            responseBody = await response.Content.ReadAsStringAsync();
+            ScenarioContext.Set<HttpResponseMessage>(response, "response");
+        }
+
+        [When(@"I Create a valid user with username ""([^""]*)"", email as ""([^""]*)"" and random password")]
+        public async Task WhenICreateAValidUserWithUsernameEmailAsAndRandomPassword(string username, string email)
+        {
+            CreateUserModel data = new CreateUserModel();
+            data.Username = username;
+            data.Email = email;
+            data.Password = "12";
+            JObject body = JObject.FromObject(data);
+            var response = await UserServices.CreateUser(body);
+            ScenarioContext.Set<HttpResponseMessage>(response, "response");
+            
+            
         }
 
 
-        [Then(@"The response code is HTTP (.*) success")]
+        [Then(@"The response contains ""([^""]*)""")]
+        public async Task ThenTheResponseContains(string content)
+        {
+            var response = ScenarioContext.Get<HttpResponseMessage>("response");
+            var responseBody2 = await response.Content.ReadAsStringAsync();
+            Assert.Contains(content, responseBody2);
+        }
+
+
+        [Then(@"The response code is HTTP (.*)")]
         public async Task ThenTheResponseCodeIsHTTPSuccess(int code)
         {
-           // Assert.True(await response.IsSuccessStatusCode());
-           response.StatusCode.Should().Be(HttpStatusCode.OK);
-            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+           var response = ScenarioContext.Get<HttpResponseMessage>("response");
+            response.StatusCode.Should().Be((HttpStatusCode)code);
+        }
+
+        [Then(@"The property first_name has a value ""([^""]*)""")]
+        public async Task ThenThePropertyHasAValue( string value)
+        {
+            var response = ScenarioContext.Get<HttpResponseMessage>("response");
+            var json = await response.Content.ReadFromJsonAsync<UserResponseModel>();
+            json.data.first_name.Should().Be(value);
+        }
+
+        [Then(@"The property first_name does not contain value as ""([^""]*)""")]
+        public async Task ThenThePropertyFirst_NameDoesNotContainValueAs(string name)
+        {
+            var response = ScenarioContext.Get<HttpResponseMessage>("response");
+            var json = await response.Content.ReadFromJsonAsync<UserResponseModel>();
+            json.data.first_name.Should().NotBe(name);
         }
 
 
